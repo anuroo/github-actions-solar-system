@@ -6,6 +6,10 @@ on:
     branches:
       - main
       - 'feature/*'
+env:
+  mongo_uri: ‘mongodb+srv://supercluster.d83jj.mongodb.net/superData'
+  mongo_username: superuser
+  mongo_password: ${{secrets.mongo_password}}
     
 jobs:
     unit-testing:
